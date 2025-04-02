@@ -4,7 +4,7 @@ import MyPage3 from "../MyPage3";
 import RouterMyPage from "../RouterMyPage";
 
 export const myPageRouter: any = {
-    path: '/mypage',
+    path: 'mypage',
     element: (
         <RouterMyPage />
     ),

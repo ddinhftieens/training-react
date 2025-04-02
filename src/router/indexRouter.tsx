@@ -11,8 +11,8 @@ export const indexRouter: any = {
     <Layout />
   ),
   children: [
-    { path: '/about', element: <RouterAbout /> },
-    { path: '/home', element: <RouterHome /> },
+    { path: 'about', element: <RouterAbout /> },
+    { path: 'home', element: <RouterHome /> },
     {
       ...myPageRouter
     }
