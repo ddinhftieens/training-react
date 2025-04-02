@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAppDispatch, useAppSelector } from './store/hook';
-import { dec, decNum, getLstUser, inc, incNum } from './reducers/counterSlice';
+import { addLst, dec, decNum, getLstUser, inc, incNum } from './reducers/counterSlice';
 
 export default function Redux1() {
 
@@ -21,6 +21,9 @@ export default function Redux1() {
                 <button onClick={() => {
                     dispath(getLstUser())
                 }} >Get lst</button>
+                <button onClick={() => {
+                    dispath(addLst("ddd"))
+                }} >Add lst</button>
             </div>
         </>
     )

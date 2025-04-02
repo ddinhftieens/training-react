@@ -17,7 +17,8 @@ root.render(
   <BrowserRouter>
     <Provider store={store}>
       {/* <DemoRouter /> */}
-      <ReduxTookit />
+      {/* <ReduxTookit /> */}
+      <App />
     </Provider>
     {/* <App /> */}
   </BrowserRouter>

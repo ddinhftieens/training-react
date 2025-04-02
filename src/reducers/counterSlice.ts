@@ -4,10 +4,7 @@ import axios from "axios";
 const initialState = {
     counter: 1,
     num: 2,
-    lst: [{
-        id: new Date().getTime(),
-        name: ''
-    }],
+    lst: [],
     count: 0
 }
 
@@ -34,6 +31,9 @@ const counterSlice = createSlice({
         },
         decNum: (state, action) => {
             state.num -= action.payload;
+        },
+        addLst: (state: any, action) => {
+            state.lst = [...state.lst, { name: "1233344" }];
         }
     },
     extraReducers: (builder) => {
@@ -54,4 +54,4 @@ const counterSlice = createSlice({
 })
 
 export default counterSlice.reducer
-export const { inc, dec, incNum, decNum } = counterSlice.actions
+export const { inc, dec, incNum, decNum, addLst } = counterSlice.actions
